@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop Smartphones — PhoneBazaar</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="navbar"></div>
+
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Shop</div>
+
+    <div class="shop-layout">
+      <aside class="filters-panel">
+        <h3>Filters</h3>
+
+        <div class="filter-group">
+          <h4>Brand</h4>
+          <div id="brand-filters"></div>
+        </div>
+
+        <div class="filter-group">
+          <h4>Max Price: <span id="price-value">₹1,50,000</span></h4>
+          <input type="range" id="price-range" min="9000" max="150000" step="1000" value="150000" />
+        </div>
+
+        <div class="filter-group">
+          <h4>Minimum Rating</h4>
+          <div id="rating-filters"></div>
+        </div>
+
+        <button class="clear-filters" id="clear-filters-btn">Clear all filters</button>
+      </aside>
+
+      <main>
+        <div class="shop-toolbar">
+          <span class="results-count" id="results-count"></span>
+          <select id="sort-select">
+            <option value="popularity">Sort by: Popularity</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Customer Rating</option>
+          </select>
+        </div>
+
+        <div class="product-grid" id="products-grid"></div>
+      </main>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>
